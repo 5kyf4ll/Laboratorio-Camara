@@ -1,0 +1,151 @@
+/* Definición de estilos globales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Cabecera superior */
+.header-top {
+    width: 100%;
+    height: 130px; 
+    position: relative;
+    background: #fff;
+}
+
+/* Logo con medidas originales de Hikvision */
+.logo {
+    float: left;
+    margin-left: 30px;
+    margin-top: 72px;
+    width: 120px;
+    height: 40px;
+    background: url("images/logo.png") center center no-repeat;
+    background-size: contain;
+}
+
+/* Selector de idioma */
+.lang-selector {
+    position: absolute;
+    right: 60px;
+    top: 72px;
+}
+
+.lang-selector select {
+    border: 1px solid #dcdcdc;
+    padding: 4px 8px;
+    font-size: 13px;
+    color: #666;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Contenedor del Banner */
+.banner-wrapper {
+    width: 100%;
+    height: 440px;
+    background: url("images/login-bg.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Imagen de la cámara y ciudad */
+.camera-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-70%);
+    height: 90%;
+    z-index: 1;
+}
+
+/* Caja de login flotante */
+.login-box {
+    background: #ffffff;
+    width: 320px;
+    padding: 40px 30px;
+    position: absolute;
+    right: 18%; 
+    border-top: 3px solid #D71920;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    z-index: 10;
+    border-radius: 2px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Iconos mediante Sprites */
+.input-group i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("images/login-icons.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.icon-user { background-position: 0 0; }
+.icon-pass { background-position: -24px 0; }
+
+.login-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 45px;
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.login-input:focus {
+    border-color: #D71920;
+}
+
+.login-btn {
+    width: 100%;
+    height: 42px;
+    background-color: #D71920;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.login-btn:hover {
+    background-color: #b3141a;
+}
+
+.privacy-tip {
+    font-size: 11px;
+    color: #999;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 1.5;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 12px;
+    color: #999;
+    background-color: #fff;
+}
